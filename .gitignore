@@ -48,6 +48,7 @@ Thumbs.db
 # Project-specific build outputs
 build/
 dist/
+Output/
 
 # py2exe specific
 *.exe

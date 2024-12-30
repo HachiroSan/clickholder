@@ -4,7 +4,7 @@
   <img src="https://raw.githubusercontent.com/HachiroSan/clickholder/master/assets/icon.png" alt="Click Holder Icon" width="128" height="128">
 </div>
 
-A simple and sleek utility designed to automate holding left click action in games. Originally made for DayZ but can be used in other games.
+A simple utility designed to automate holding left click action in games. Originally made for DayZ but can be used in other games.
 
 <div align="center">
 
@@ -38,8 +38,7 @@ A simple and sleek utility designed to automate holding left click action in gam
 
 ### Installation
 
-#### For Users
-There are two ways to install Click Holder:
+There are two ways to use Click Holder:
 
 1. **Installer Version**
    - Download `ClickHolder_Setup.exe` from [Releases](https://github.com/yourusername/click-holder/releases)
@@ -62,41 +61,9 @@ There are two ways to install Click Holder:
 > - Build from source yourself
 > - Add the application to your antivirus exclusions
 
-#### For Developers
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/click-holder.git
-cd click-holder
-```
-
-2. Install dependencies:
-```bash
-# For basic usage and development
-pip install -r requirements.txt
-
-# For development tools (linting, testing, etc.)
-pip install -r requirements/dev.txt
-
-# For documentation
-pip install -r requirements/docs.txt
-```
-
-3. Run the application:
-```bash
-python run.py
-```
-
-4. Build executable (optional):
-```bash
-# Build both portable executable and installer
-python scripts/build.py
-```
-
-Or build individually:
-```bash
-# Build portable executable only
-pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" run.py --name ClickHolder
-```
+> 🔧 **For Developers**
+> 
+> If you want to contribute or build from source, see [DEVELOPMENT.md](DEVELOPMENT.md)
 
 ## ⚙️ Configuration Options
 

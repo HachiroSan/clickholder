@@ -6,12 +6,6 @@
 
 A simple and sleek utility designed to automate holding left click action in games. Originally made for DayZ but can be used in other games.
 
-## 🌟 Why Click Holder?
-
-- **User-Friendly**: Simple interface with system tray integration
-- **Customizable**: Configure your own trigger key and sound preferences
-- **Open Source**: Transparent, community-driven development
-
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
@@ -23,11 +17,22 @@ A simple and sleek utility designed to automate holding left click action in gam
 
 ## ✨ Features
 
-- 🖱️ **Smart Click Holding**: Automatically holds left mouse button when trigger key is held
+- 🖱️ **Auto Click Holding**: Automatically holds left mouse button when trigger key is held
 - ⌨️ **Customizable Trigger**: Configure your preferred trigger key (default: Left Alt)
 - 🔊 **Audio Feedback**: Clear sound indicators for state changes
 - 🔲 **System Tray Integration**: Runs quietly in your system tray
-- 🌙 **Modern Dark Theme**: Easy on the eyes during long gaming sessions
+
+## 🎮 How to Use
+
+1. **Launch the Application**
+   - Start Click Holder from the Start Menu or by running the executable
+   - The app will minimize to your system tray
+
+2. **Basic Usage**
+   - Hold the trigger key (Left Alt by default)
+   - Click your left mouse button once
+   - Release both keys - the click will continue automatically
+   - Click left click again to stop the auto-hold
 
 ## 🚀 Quick Start
 

@@ -97,12 +97,6 @@ Or build individually:
 pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" run.py --name ClickHolder
 ```
 
-# Build installer only (requires Inno Setup)
-"C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
-```
-The outputs will be:
-- Portable: `dist/ClickHolder.exe`
-- Installer: `Output/ClickHolder_Setup_0.1.0-beta.exe`
 
 ## 🎮 How to Use
 
@@ -112,22 +106,6 @@ The outputs will be:
 4. **Configure**: Double-click tray icon to access settings
 5. **Customize**: Adjust trigger key and sound preferences
 
-## 🏗️ Project Structure
-
-```
-.
-├── src/
-│   ├── controllers/    # Mouse and keyboard control logic
-│   ├── models/        # Data structures and state management
-│   ├── utils/         # Helper functions and utilities
-│   ├── ui/           # User interface components
-│   └── threads/      # Background processing threads
-├── assets/
-│   ├── sounds/       # Audio feedback files
-│   └── icons/        # Application icons
-├── main.py           # Application entry point
-└── requirements.txt  # Project dependencies
-```
 
 ## ⚙️ Configuration Options
 
@@ -147,16 +125,6 @@ Contributions are welcome! Here's how you can help:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-> 📦 **Release Process**
-> 
-> When creating a new release:
-> 1. Build the portable executable using PyInstaller
-> 2. Create the installer using Inno Setup
-> 3. Test both versions thoroughly
-> 4. Create a new GitHub release
-> 5. Upload both `ClickHolder.exe` and `ClickHolder_Setup.exe`
-> 
-> Note: Never commit build artifacts (`dist/`, `Output/`) to the repository
 
 ## 📝 License
 

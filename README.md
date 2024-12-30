@@ -24,15 +24,12 @@ A simple and sleek utility designed to automate holding left click action in gam
 
 ## 🎮 How to Use
 
-1. **Launch the Application**
-   - Start Click Holder from the Start Menu or by running the executable
-   - The app will minimize to your system tray
+1. **Launch**: Start the app - it automatically minimizes to system tray
+2. **Activate**: Hold the trigger key (Left Alt by default) and left click
+3. **Deactivate**: Left click again to stop the auto-hold
+4. **Configure**: Double-click tray icon to access settings
+5. **Customize**: Adjust trigger key and sound preferences
 
-2. **Basic Usage**
-   - Hold the trigger key (Left Alt by default)
-   - Click your left mouse button once
-   - Release both keys - the click will continue automatically
-   - Click left click again to stop the auto-hold
 
 ## 🚀 Quick Start
 
@@ -100,22 +97,6 @@ Or build individually:
 # Build portable executable only
 pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" run.py --name ClickHolder
 ```
-
-## 🎮 How to Use
-
-1. **Basic Usage**
-   - Hold the trigger key (Left Alt by default)
-   - Click your left mouse button once
-   - Release both keys - the click will continue automatically
-   - Click left click again to stop the auto-hold
-
-
-1. **Launch**: Start the app - it automatically minimizes to system tray
-2. **Activate**: Hold the trigger key (Left Alt by default) and click
-3. **Deactivate**: Click again to stop the auto-hold
-4. **Configure**: Double-click tray icon to access settings
-5. **Customize**: Adjust trigger key and sound preferences
-
 
 ## ⚙️ Configuration Options
 

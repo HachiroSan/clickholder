@@ -47,4 +47,11 @@ Thumbs.db
 
 # Project-specific build outputs
 build/
-dist/ 
+dist/
+
+# py2exe specific
+*.exe
+*.dll
+*.pyd
+*.manifest
+w9xpopen.exe 

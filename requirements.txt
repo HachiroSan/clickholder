@@ -1,2 +1,2 @@
-pyside6>=6.5.0
-pynput>=1.7.6 
+PySide6>=6.0.0
+cx_Freeze>=6.11.0 

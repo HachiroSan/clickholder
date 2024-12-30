@@ -101,8 +101,14 @@ Or build individually:
 pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" run.py --name ClickHolder
 ```
 
-
 ## 🎮 How to Use
+
+1. **Basic Usage**
+   - Hold the trigger key (Left Alt by default)
+   - Click your left mouse button once
+   - Release both keys - the click will continue automatically
+   - Click left click again to stop the auto-hold
+
 
 1. **Launch**: Start the app - it automatically minimizes to system tray
 2. **Activate**: Hold the trigger key (Left Alt by default) and click

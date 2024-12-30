@@ -6,11 +6,19 @@
 
 A sleek utility designed to automate holding left click action in games. Originally made for DayZ but can be used in other games.
 
+## 🌟 Why Click Holder?
+
+- **Lightweight**: Small executable size, minimal resource usage
+- **User-Friendly**: Simple interface with system tray integration
+- **Customizable**: Configure your own trigger key and sound preferences
+- **Open Source**: Transparent, community-driven development
+
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![PySide6](https://img.shields.io/badge/PySide6-Latest-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Version](https://img.shields.io/badge/version-0.1.0--beta-orange)
 
 </div>
 
@@ -29,6 +37,32 @@ A sleek utility designed to automate holding left click action in games. Origina
 
 ### Installation
 
+#### For Users
+There are two ways to install Click Holder:
+
+1. **Installer Version**
+   - Download `ClickHolder_Setup.exe` from [Releases](https://github.com/yourusername/click-holder/releases)
+   - Run the installer and follow the instructions
+   - The application will be installed with start menu shortcuts
+
+2. **Portable Version**
+   - Download `ClickHolder.exe` from [Releases](https://github.com/yourusername/click-holder/releases)
+   - No installation needed - just run the executable
+   - Can be moved to any location or USB drive
+
+> ⚠️ **Antivirus Notice**
+> 
+> Some antivirus software may flag this application as suspicious because:
+> - It monitors keyboard and mouse inputs
+> - It's a PyInstaller-packaged executable
+> 
+> This is a false positive. The application is completely safe and open source.
+> You can:
+> - View the source code on GitHub
+> - Build from source yourself
+> - Add the application to your antivirus exclusions
+
+#### For Developers
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/click-holder.git
@@ -37,15 +71,39 @@ cd click-holder
 
 2. Install dependencies:
 ```bash
+# For basic usage and development
 pip install -r requirements.txt
+
+# For development tools (linting, testing, etc.)
+pip install -r requirements/dev.txt
+
+# For documentation
+pip install -r requirements/docs.txt
 ```
 
-### Running the Application
-
-Launch the application with:
+3. Run the application:
 ```bash
-python main.py
+python run.py
 ```
+
+4. Build executable (optional):
+```bash
+# Build both portable executable and installer
+python scripts/build.py
+```
+
+Or build individually:
+```bash
+# Build portable executable only
+pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "assets;assets" run.py --name ClickHolder
+```
+
+# Build installer only (requires Inno Setup)
+"C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
+```
+The outputs will be:
+- Portable: `dist/ClickHolder.exe`
+- Installer: `Output/ClickHolder_Setup_0.1.0-beta.exe`
 
 ## 🎮 How to Use
 
@@ -89,6 +147,17 @@ Contributions are welcome! Here's how you can help:
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+> 📦 **Release Process**
+> 
+> When creating a new release:
+> 1. Build the portable executable using PyInstaller
+> 2. Create the installer using Inno Setup
+> 3. Test both versions thoroughly
+> 4. Create a new GitHub release
+> 5. Upload both `ClickHolder.exe` and `ClickHolder_Setup.exe`
+> 
+> Note: Never commit build artifacts (`dist/`, `Output/`) to the repository
 
 ## 📝 License
 

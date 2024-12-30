@@ -15,6 +15,8 @@ from ..threads.click_detection_thread import ClickDetectionThread
 from .status_widget import StatusWidget
 from .settings_widget import SettingsWidget
 from .instructions_widget import InstructionsWidget
+from src.utils.resource_path import resource_path
+from ..version import __version_full__
 
 logger = logging.getLogger(__name__)
 
@@ -38,7 +40,7 @@ class MainWindow(QMainWindow):
     def _setup_window(self):
         self.setWindowTitle("Click Holder")
         self.setFixedSize(300, 420)
-        self.setWindowIcon(QIcon("assets/icon.ico"))
+        self.setWindowIcon(QIcon(resource_path("assets/icon.ico")))
         self._apply_stylesheet()
 
     def _apply_stylesheet(self):
@@ -98,7 +100,7 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.instructions_widget)
         
         # Add footer
-        footer = QLabel("Developed by Hachiro")
+        footer = QLabel(f"Developed by Hachiro | v{__version_full__}")
         footer.setAlignment(Qt.AlignCenter)
         footer.setProperty("class", "footer")
         footer.setStyleSheet("""
@@ -112,12 +114,12 @@ class MainWindow(QMainWindow):
 
     def _setup_sound(self):
         self.beep = QSoundEffect()
-        self.beep.setSource(QUrl.fromLocalFile("assets/beep.wav"))
+        self.beep.setSource(QUrl.fromLocalFile(resource_path("assets/beep.wav")))
         self.beep.setVolume(0.5)
 
     def _setup_tray(self):
         self.tray_icon = QSystemTrayIcon(self)
-        self.tray_icon.setIcon(QIcon("assets/icon.ico"))
+        self.tray_icon.setIcon(QIcon(resource_path("assets/icon.ico")))
         self.tray_icon.setToolTip("Click Holder")
         
         self.tray_menu = QMenu()

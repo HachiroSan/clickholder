@@ -24,7 +24,7 @@ setup(
         Executable(
             "run.py",
             base=base,
-            icon="assets/icon.ico",  # Make sure you have an .ico file
+            icon="assets/icon.ico",
             target_name="ClickHolder.exe"
         )
     ]

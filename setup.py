@@ -1,7 +1,6 @@
 import sys
 from cx_Freeze import setup, Executable
 
-# Dependencies are automatically detected, but it might need fine tuning.
 build_exe_options = {
     "packages": ["PySide6", "logging"],
     "excludes": ["tkinter", "unittest"],
@@ -13,7 +12,7 @@ build_exe_options = {
 
 base = None
 if sys.platform == "win32":
-    base = "Win32GUI"  # Use this to hide console window
+    base = "Win32GUI" 
 
 setup(
     name="Click Holder",

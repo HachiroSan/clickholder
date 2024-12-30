@@ -24,35 +24,90 @@ wheels/
 venv/
 env/
 ENV/
+.env/
+.venv/
+python?/
 
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
+*.sublime-workspace
+*.sublime-project
+.project
+.pydevproject
+.settings/
+.classpath
+nbproject/
+.vs/
 
 # Logs
 *.log
 app.log
+logs/
+*.log.*
 
 # Qt-specific
 *.qmlc
 *.jsc
 *.qm
 *.ts
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
+*.exe
+*.spec
 
 # OS-specific
 .DS_Store
 Thumbs.db
+.DS_Store?
+.*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
 
 # Project-specific build outputs
 build/
 dist/
 Output/
+releases/
 
-# py2exe specific
-*.exe
-*.dll
-*.pyd
-*.manifest
-w9xpopen.exe 
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Documentation
+site/
+docs/_build/
+
+# Development tools
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Local development
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+
+# Backup files
+*.bak
+*.tmp
+*~
+*.swp
+*.swo 

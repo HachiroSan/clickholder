@@ -4,11 +4,10 @@
   <img src="https://raw.githubusercontent.com/HachiroSan/clickholder/master/assets/icon.png" alt="Click Holder Icon" width="128" height="128">
 </div>
 
-A sleek utility designed to automate holding left click action in games. Originally made for DayZ but can be used in other games.
+A simple and sleek utility designed to automate holding left click action in games. Originally made for DayZ but can be used in other games.
 
 ## 🌟 Why Click Holder?
 
-- **Lightweight**: Small executable size, minimal resource usage
 - **User-Friendly**: Simple interface with system tray integration
 - **Customizable**: Configure your own trigger key and sound preferences
 - **Open Source**: Transparent, community-driven development
@@ -24,7 +23,7 @@ A sleek utility designed to automate holding left click action in games. Origina
 
 ## ✨ Features
 
-- 🖱️ **Smart Click Holding**: Automatically holds left mouse button
+- 🖱️ **Smart Click Holding**: Automatically holds left mouse button when trigger key is held
 - ⌨️ **Customizable Trigger**: Configure your preferred trigger key (default: Left Alt)
 - 🔊 **Audio Feedback**: Clear sound indicators for state changes
 - 🔲 **System Tray Integration**: Runs quietly in your system tray
@@ -46,7 +45,7 @@ There are two ways to install Click Holder:
    - The application will be installed with start menu shortcuts
 
 2. **Portable Version**
-   - Download `ClickHolder.exe` from [Releases](https://github.com/yourusername/click-holder/releases)
+   - Download `ClickHolder_[version].exe` from [Releases](https://github.com/yourusername/click-holder/releases)
    - No installation needed - just run the executable
    - Can be moved to any location or USB drive
 

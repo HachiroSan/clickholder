@@ -1,10 +1,18 @@
 # 🖱️ Click Holder
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/HachiroSan/clickholder/master/assets/icon.png" alt="Click Holder Icon" width="128" height="128">
+</div>
+
 A sleek utility designed to automate holding left click action in games. Originally made for DayZ but can be used in other games.
+
+<div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![PySide6](https://img.shields.io/badge/PySide6-Latest-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+</div>
 
 ## ✨ Features
 
@@ -100,4 +108,6 @@ If you encounter any issues or have suggestions:
 - Open an issue on GitHub
 
 ---
-Made with ❤️ for the DayZ community 
+<div align="center">
+Made with ❤️ for the DayZ community
+</div> 

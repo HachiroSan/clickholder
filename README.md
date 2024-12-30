@@ -52,7 +52,6 @@ There are two ways to install Click Holder:
 2. **Portable Version**
    - Download `ClickHolder_[version].exe` from [Releases](https://github.com/yourusername/click-holder/releases)
    - No installation needed - just run the executable
-   - Can be moved to any location or USB drive
 
 > ⚠️ **Antivirus Notice**
 > 
